@@ -34,13 +34,11 @@
 
         <h2>Sobre mim</h2> <!--Título menor-->
 
-        <img src="imagens/file.jpg" alt="Imagem de foto de perfil" title="Imagem de perfil de Gabriel"> <!--Inserção de imagem-->
+        <img src="imagens/Male07.3.webp" alt="Imagem de foto de perfil" title="Imagem de perfil de Gabriel"> <!--Inserção de imagem-->
 
             <article> <!--Artigo principal da sessão-->
 
-                <p>Eu sou o Gabriel, técnico de informática autônomo e futuro desenvolvedor de software.
-
-                </p>
+                <p>Eu sou o Gabriel, técnico de informática autônomo e futuro desenvolvedor de software.</p>
 
             </article>
 
@@ -68,9 +66,7 @@
 
             <h3>Portfólio</h3>
 
-            <p>
-                Este foi o primeiro site que desenvolvi estudando front end.
-            </p>
+            <p>Este foi o primeiro site que desenvolvi estudando front end.</p>
 
         </article>
 
@@ -82,9 +78,35 @@
 
         <h2>Contato</h2>
 
-        <p>Tem um projeto em mente? Entre em contato conosco!
+        <p>Tem um projeto em mente? Entre em contato comigo!</p>
 
-        </p>
+        <form action=""> <!--Sessão de preenchimento de formulário por parte do usuário, action será usado para linkar com um database-->
+
+            <label for="nome">Nome: </label> <br>
+            <input type="text" id="nome" name="nome" required> <br> <br>
+
+            <label for="email">Email: </label> <br>
+            <input type="email" id="email" name="email" required> <br> <br>
+
+            <label for="telefone">Telefone: </label> <br>
+            <input type="tel" id="telefone" name="telefone"> <br> <br>
+
+            <label for="assunto">Assunto: </label> <br> <!--Opções selecionáveis pelo usuário-->
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select> <br> <br>
+            
+            <label for="mensagem">Mensagem: </label> <br> <!--Campo de texto-->
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea> <br> <br>
+
+            <input type="checkbox" id="inscricao" name="inscricao"> 
+            <label for="inscricao">Deseja receber minha Newsletter? Fique por dentro.</label>
+
+            <input type="submit" value="Enviar mensagem"> <br> <br>
+
+        </form>
 
         <address>
 
@@ -97,9 +119,7 @@
 
     <footer>
 
-        <p>Direitos reservados a Gabriel.
-            
-        </p>
+        <p>Direitos reservados a Gabriel.</p>
 
     </footer>
 
